@@ -8,7 +8,25 @@
 
 #import "waterFlowlayout.h"
 
+@interface waterFlowlayout ()
+
+@property (nonatomic, strong) NSMutableArray *dataArray;
+
+@end
+
+
 @implementation waterFlowlayout
+
+
+- (NSMutableArray *)dataArray
+{
+    if (!_dataArray)
+    {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
+
 
 //实现自定义布局实现4种方法
 /**
